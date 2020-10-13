@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/*ASPECTOS GENERALES*/
+.section__barraSuperiorVioleta {
+  background-color: #D8B8B6;
+  height: 130px;
+  position: relative;
+  top: 0px; }
+
+.logo {
+  height: 115px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 420px;
+  margin: auto; }
+
+.nav__barraDeNavegacion ul {
+  text-align: center;
+  font-size: 18px;
+  font-style: bold;
+  font-weight: 600;
+  background-color: #FFCCCC;
+  height: 30px;
+  margin: 0px;
+  padding-top: 12px;
+  width: 100%;
+  position: sticky;
+  top: 0px; }
+
+.nav__barraDeNavegacion li {
+  display: inline; }
+
+.nav__barraDeNavegacion a {
+  color: #A56565;
+  text-decoration: none; }
+
+.nav__barraDeNavegacion .nav__item {
+  padding: 18px; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0px; }
+
+@font-face {
+  font-family: tipografiacursiva;
+  src: url(HelloHoney.otf); }
+
+.footer__page {
+  background-image: linear-gradient(to right, #FFDBDB, #D8B8B6);
+  height: 200px;
+  position: relative;
+  top: 200px; }
+
+.footer__text {
+  font-size: 14px;
+  text-align: center;
+  padding: 180px; }
+
+/*SECCIÓN HOME*/
+.div__imagenMiaHome {
+  width: 660px; }
+
+.div__imagenSaludo {
+  width: 750px;
+  position: absolute;
+  right: 53px;
+  top: 260px;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*SECCIÓN SOBRE MI*/
+section h1 {
+  font-size: 100px;
+  margin-left: 20px;
+  position: relative;
+  bottom: 850px;
+  font-family: tipografiacursiva;
+  font-weight: normal;
+  color: #A56565; }
+
+.section__FondoRosa {
+  background-color: #FFCCCC;
+  opacity: 0.6;
+  height: 800px;
+  position: relative;
+  bottom: 55px; }
+
+.section__textoSobreMi {
+  background-color: #D8B8B6;
+  width: 600px;
+  height: 350px;
+  overflow: hidden;
+  margin-left: 140px;
+  padding: 10px;
+  position: absolute;
+  top: 1080px;
+  overflow: visible; }
+  .section__textoSobreMi em {
+    font-family: tipografiacursiva;
+    font-size: 75px;
+    font-style: normal;
+    padding: 320px;
+    position: absolute;
+    bottom: 20px; }
+  .section__textoSobreMi p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    text-align: justify;
+    margin: 30px 10px 10px 10px; }
+
+.div__imagenMiaSobremi {
+  width: 500px;
+  margin-left: 700px;
+  position: absolute;
+  top: 1000px;
+  box-shadow: 5px 5px 20px;
+  color: grey; }
+
+.section__lineaRosa {
+  background-color: #FFCCCC;
+  height: 50px;
+  position: relative;
+  bottom: 350px; }
+
+/*SECCIÓN SERVICIOS*/
+section h2 {
+  font-size: 100px;
+  margin-left: 20px;
+  position: relative;
+  bottom: 430px;
+  font-family: tipografiacursiva;
+  font-weight: normal;
+  color: #A56565; }
+
+.section__flexContainerServicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 300px; }
+  .section__flexContainerServicios p {
+    font-size: 20px;
+    position: relative;
+    right: 200px; }
+
+.section__flexServicio {
+  width: 250px; }
+
+/*SECCIÓN PORTFOLIO*/
+section h3 {
+  font-size: 100px;
+  margin-left: 20px;
+  position: relative;
+  bottom: 200px;
+  font-family: tipografiacursiva;
+  font-weight: normal;
+  color: #A56565; }
+
+#portfolio {
+  padding: 10px;
+  position: relative;
+  top: 200px;
+  display: grid;
+  grid-template-areas: "tituloA tituloA tituloA" "trabajoA trabajoB trabajoC" "tituloB tituloB tituloB" "trabajoD trabajoE trabajoF";
+  grid-template-columns: 33% 33% auto;
+  grid-template-rows: 100px 200px 100px 200px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+  #portfolio p {
+    font-size: 20px;
+    text-align: justify; }
+
+.imagenConTitulo1 {
+  grid-area: tituloA;
+  border: 3px;
+  background-color: #D8B8B6; }
+
+.trabajo1 {
+  grid-area: trabajoA;
+  border: 3px;
+  background-color: #D8B8B6; }
+
+.trabajo2 {
+  grid-area: trabajoB;
+  border: 3px;
+  background-color: #D8B8B6; }
+
+.trabajo3 {
+  grid-area: trabajoC;
+  border: 3px;
+  background-color: #D8B8B6; }
+
+.imagenConTitulo2 {
+  grid-area: tituloB;
+  border: 3px;
+  background-color: #D8B8B6; }
+
+.trabajo4 {
+  grid-area: trabajoD;
+  border: 3px;
+  background-color: #D8B8B6; }
+
+.trabajo5 {
+  grid-area: trabajoE;
+  border: 3px;
+  background-color: #D8B8B6; }
+
+.trabajo6 {
+  grid-area: trabajoF;
+  border: 3px;
+  background-color: #D8B8B6; }
+
+/*SECCIÓN CONTACTO*/
+section h4 {
+  font-size: 25px;
+  margin-left: 10px;
+  position: relative;
+  top: 200px; }
+
+.formulario {
+  position: relative;
+  top: 200px;
+  margin-left: 10px; }
+  .formulario em {
+    font-style: normal; }
+
+input {
+  transition: all 2s; }
+
+input:focus {
+  width: 500px;
+  font-size: 35px; }
